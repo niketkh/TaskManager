@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TaskManager | Edit Task</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  	<script src="js/bootstrap.js"></script>
+  	<script src="js/main.js"></script>
+	</head>
+	<body onload="getTask();getCategoryOptions()">
+		<div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="index.html">Home</a></li>
+            <li role="presentation"><a href="addtask.html">Add Task</a></li>
+            <li role="presentation"><a href="categories.html">Manage Categories</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">TaskManager</h3>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-12">
+          <h4>Edit Task</h4>
+         <form id="edit_task">
+            <div class="form-group">
+              <label>Task Name</label>
+              <input type="text" name="task_name" class="form-control" id="task_name" placeholder="Task Name">
+            </div>
+
+            <div class="form-group">
+              <label>Category</label>
+              <select name="category" class="form-control" id="category">
+
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Due Date</label>
+              <input type="date" name="due_date" class="form-control" id="due_date" placeholder="Task Name">
+            </div>
+
+            <div class="form-group">
+              <label>Is Urgent?</label>
+              <select name="is_urgent" class="form-control" id="is_urgent">
+              <option value="false">No</option>
+              <option value="true">Yes</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+         </form>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; Task Manager 2016</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+	</body>
+</html>
